@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .entry {
+            width: 250px;
+            height: auto;
+            border: 3px solid rgb(112, 233, 91);
+            padding: 5px;
+            border-radius: 2px;
+            background-color: azure;
+            line-height: 4px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body class="bg-light">
+
+        <div class="container py-5">
+
+            <form id="studentForm" class="row g-3 mb-4">
+                <div class="col-md-5">
+                    <input type="text" id="name" class="form-control" placeholder="Student name" required>
+                </div>
+                <div class="col-md-3">
+                    <input type="number" id="grade" class="form-control" placeholder="Grade" required min="0" max="100">
+                </div>
+                <div class="col-md-4 d-flex gap-4">
+                    <button type="submit" id="saveBtn" class="btn btn-success">Save</button>
+                </div>
+            </form>
+            <div id="averageGrade"></div>
+
+            <main id="entries" class="mb-4"></main>
+
+            <div id="userInfo" class="alert alert-info"></div>
+        </div>
+
+        <script src="./app.js"></script>
+    </body>
+
+</html>
